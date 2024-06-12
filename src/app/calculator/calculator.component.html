@@ -1,0 +1,11 @@
+<hr/><h2>calculator works!</h2><hr/>
+<pre>
+<b> First Number :</b><input type="text" #fnum> <br>
+<b> Second Number:</b><input type="text" #snum> <br>
+<b> Result :</b>{{result}} <br>
+<!-- <b> Password :</b><input type="password" #password> <br> -->
+</pre>
+<button type="text" (click)="addOperation(fnum.value,snum.value)">Add</button> &nbsp;
+<button type="text" (click)="subOperation(fnum.value,snum.value)">Sub</button> &nbsp;
+<button type="text" (click)="mulOperation(fnum.value,snum.value)">Mul</button> &nbsp;
+<button type="text" (click)="divOperation(fnum.value,snum.value)">Div</button>

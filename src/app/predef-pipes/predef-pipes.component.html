@@ -1,0 +1,21 @@
+<hr/> <h2>Predefined Pipes</h2> <hr/>
+<pre>
+    
+1. Normal : {{name}}
+2. UpperCase : {{name | uppercase}}
+3. Lowercase : {{name | lowercase}}
+4. Titlecase : {{name | titlecase | slice:0:6}}        Pipe chaining
+5. Default Price : {{price | currency}}
+6. INR Price : {{price | currency : 'INR'}}      Parameterized Pipe
+7. EUR Price : {{price | currency : 'EUR'}}
+8. Product JSON : {{product | json}}
+9. System Date :{{sysdate | date}}
+10. System Date2 :{{sysdate | date:'dd/MM/yyyy'}}
+11. System Date3 :{{sysdate | date:'MM/dd/yyyy'}}
+12. System Date4 :{{sysdate | date:'fullDate'}}
+13. System Date4 :{{sysdate | date:'shortDate'}}
+14. System Date2 :{{sysdate | date:'dd/MM/yyyy hh:mm:ss'}}
+15. Date of Birth : {{dob | date:'dd/MM/yyyy'}}
+<span [innerHTML] = 'name | myboldpipe' ></span>
+16. Customized Uppercase : {{name | myupper}}     Custom pipe
+</pre>
